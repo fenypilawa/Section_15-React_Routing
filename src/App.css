@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+.container {
+    margin-top: 70px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+    text-align: center;
+    font-size: 100px;
+    background: linear-gradient(to right, #0eae71 20%, #FF8C00 35%, #d825ab 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Todos {
+    font-weight: bold;
+    padding: 14px;
+    border: 3px solid black;
+    border-radius: 50px;
+    width: fit-content;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.todo-add {
+    width: 100%;
+    margin-bottom: 50px;
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    border-radius: 20px;
+    box-shadow: 1px 2px 12px 7px rgba(176,174,176,1);
+    padding: 6px;
 }
 
-.App-link {
-  color: #61dafb;
+.input {
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    margin-left: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-add-btn {
+    width: 12%; 
+    border: 3px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.todo-fix {
+    font-weight: bold;
+    padding: 14px;
+    border: 3px solid black;
+    border-radius: 50px;
+    width: fit-content;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.todo-title {
+    font-weight: bold;
+    padding: 14px;
+    border: 3px solid black;
+    border-radius: 50px;
+    width: fit-content;
+    margin-left: 10px;
+}
+
+.btn-delete {
+    width: fit-content;
+    color: black;
+}   
+
+.icon {
+    width: 100%;
+    align-items: center;
+    justify-content:center;
+    padding: 10px;
+    display: flex;
+}
+
+.icon-title {
+    width: 100%;
+}
+
+.icon-btn {
+    width:  10%;
+}
+
+.eror {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.Not-Found {
+    width: 25%;
+}
+
+.ups {
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: 'Robot';
+    src: url(../src/assets/Robot.otf);
 }
